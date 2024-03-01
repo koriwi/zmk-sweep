@@ -105,10 +105,10 @@
 
         tri_layer {
             bindings = <
-&sys_reset   &trans  &trans          &trans      &bt BT_SEL 0    &trans  &trans  &trans  &trans  &sys_reset
-&bootloader  &trans  &trans          &trans      &bt BT_SEL 1    &trans  &trans  &trans  &trans  &bootloader
-&trans       &trans  &bt BT_CLR_ALL  &bt BT_CLR  &bt BT_SEL 2    &trans  &trans  &trans  &trans  &trans
-                                     &trans      &trans          &trans  &trans
+&sys_reset   &trans          &kp UP_ARROW    &trans           &bt BT_SEL 0    &trans    &trans    &none         &trans           &sys_reset
+&bootloader  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bt BT_SEL 1    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &bootloader
+&trans       &trans          &bt BT_CLR_ALL  &bt BT_CLR       &bt BT_SEL 2    &trans    &trans    &trans        &trans           &trans
+                                             &trans           &trans          &trans    &trans
             >;
         };
     };
