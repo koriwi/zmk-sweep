@@ -20,13 +20,13 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-        tdtab: tap_dance_12 {
+        tdtab: tdtab {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>; 
             tapping-term-ms = <200>; 
             bindings = <&kp ESCAPE>, <&kp TAB>;
         }; 
-        tdquote: tap_dance_4 {
+        tdquote: tdquote {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>; 
             tapping-term-ms = <200>; 
@@ -41,7 +41,7 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
-        hrmod_l: hrmodl {
+        hrmod_l: hrmod_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -111,7 +111,7 @@
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  &       │  _       │  +       │  │       │          │
-            &trans     &trans     &trans     &trans  7   &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
+            &trans     &trans     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
