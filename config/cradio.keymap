@@ -79,7 +79,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                         &hrmod LCTRL SPACE  &tdtab   BACKSPACE  &hrmod_l 1 ENTER &hrmod LSHIFT 
+                                         &hrmod LCTRL SPACE  &tdtab   &hrmod_l 1 ENTER &hrmod LSHIFT BACKSPACE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
