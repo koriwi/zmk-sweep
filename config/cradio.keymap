@@ -27,7 +27,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp ESCAPE>, <&kp TAB>;
+            bindings = <&kp TAB>, <&kp ESC>;
         };
 
         tdquote: tdquote {
@@ -106,10 +106,10 @@
 
         tri_layer {
             bindings = <
-&sys_reset   &trans          &kp UP_ARROW    &trans           &bt BT_SEL 0    &out OUT_USB    &out OUT_BLE    &none         &trans           &sys_reset
-&bootloader  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bt BT_SEL 1    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &bootloader
-&trans       &trans          &bt BT_CLR_ALL  &bt BT_CLR       &bt BT_SEL 2    &trans    &trans    &trans        &trans           &trans
-                                             &trans           &trans          &trans    &trans
+&sys_reset   &trans          &kp UP_ARROW    &trans           &bt BT_SEL 0    &out OUT_USB  &out OUT_BLE  &none         &trans           &sys_reset
+&bootloader  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &bt BT_SEL 1    &kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT_ARROW  &bootloader
+&trans       &trans          &bt BT_CLR_ALL  &bt BT_CLR       &bt BT_SEL 2    &trans        &trans        &trans        &trans           &trans
+                                             &trans           &trans          &trans        &trans
             >;
         };
     };
