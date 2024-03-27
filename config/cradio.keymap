@@ -92,12 +92,12 @@
         };
 
         leftarrow {
-            bindings = <&kp LEFT>;
+            bindings = <&kp RIGHT>;
             key-positions = <14 13>;
         };
 
         rightarrow {
-            bindings = <&kp RIGHT>;
+            bindings = <&kp LEFT>;
             key-positions = <11 12>;
         };
 
